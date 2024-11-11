@@ -1,0 +1,165 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-nav {
+    border-bottom: 1px solid;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.back-icon {
+    width: 30px;
+    margin-top: 7px;
+}
+
+
+.cart-item {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    max-height: 78vh;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.cart-item::-webkit-scrollbar {
+    display: none;
+}
+
+.cart-item-details,
+.added-items {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.added-items .delete-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.cart-item-details {
+    font-size: 20px;
+}
+
+.cart-item p {
+    width: 14vw;
+    text-align: center;
+}
+
+.added-items img {
+    width: 80px;
+    border-radius: 6px;
+}
+.cart-bottom{
+    align-self: flex-end;
+}
+
+.cart-total{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-total hr{
+    margin:  10px 0;
+}
+
+.cart-total-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-total button{
+    align-self: flex-end;
+    background: #212121;
+    font-family: 'outfit';
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .cart-item p {
+        font-size: 14px;
+
+    }
+
+    .cart-item-details p {
+        font-size: 14px;
+    }
+
+    .cart-item-details,
+    .added-items {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .added-items .delete-icon {
+        width: 20px;
+    }
+
+    .food-img {
+        width: 20vw;
+    }
+    .cart-total{
+        width: 78vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .cart-nav {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .cart-item {
+        margin-top: 25px;
+
+    }
+
+    .back-icon {
+        width: 20px;
+        margin-top: 7px;
+    }
+
+    .cart-nav h1 {
+        font-size: 22px;
+    }
+
+    .food-img {
+        display: none;
+    }
+
+    .food-name {
+        display: none;
+    }
+
+    .cart-total{
+        width: 98vw;
+    }
+
+    .cart-total button{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 20px;
+    }
+}

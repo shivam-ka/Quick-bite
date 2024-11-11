@@ -1,0 +1,159 @@
+.food-item {
+    width: 300px;
+    margin-bottom: 15px;
+    background: #dddddd;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.food-item:hover {
+    background: #ffe59d;
+}
+
+.food-item-name {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.customer-rating {
+    display: flex;
+}
+
+.customer-rating .star-img img {
+    width: 20px;
+    margin-right: 4px;
+}
+
+.food-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.food-item-img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.food-item-rating .rating {
+    font-size: 18px;
+}
+
+.food-item-desc {
+    font-size: 16px;
+    color: #212121;
+}
+
+.foot-item-cart-add {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-item-price {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.foot-item-cart-add .add-button {
+    padding: 4px 20px;
+    font-size: 20px;
+    border-radius: 30px 30px 0 30px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffd4a9, #fffbbc);
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 500;
+}
+
+
+.foot-item-cart-add .add-button:hover {
+    background: linear-gradient(135deg, #ffc082, #fff56a);
+}
+
+
+
+.food-item-counter {
+    background: #ffffff;
+    padding: 5px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.food-item-counter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background: #dddddd;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: #ffeed3;
+}
+
+
+
+.food-item-counter p {
+    font-size: 22px;
+}
+
+.food-item-counter img {
+    width: 30px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .food-item {
+        width: 250px;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .food-item {
+        width: 43vw;
+        padding: 10px;
+        padding-top: 10px;
+    }
+
+    .food-item-desc {
+        font-size: 14px;
+    }
+
+    .food-item-counter {
+        padding: 5px 5px;
+    }
+
+    .food-item-counter p {
+        font-size: 16px;
+    }
+
+    .food-item-counter div {
+        font-size: 19px;
+    }
+
+    .customer-rating .star-img img {
+        width: 15px;
+        margin-right: 3px;
+    }
+    .food-item-rating .rating {
+        font-size: 14px;
+    }
+
+    .food-item-price {
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,84 @@
+.menu{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu .slogan{
+    width: 80%;
+    font-size: 22px;
+    color: #000000;
+}
+
+.menu-list{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+}
+
+.menu-list::-webkit-scrollbar{
+    display: none;
+}
+
+.menu-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-list-item img{
+    width: 120px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.menu-list-item img:hover{
+    padding: 5px;
+    border: 2px solid #fd6b00;
+    border-radius: 50%;
+}
+
+.menu .active{
+    padding: 5px;
+    border: 4px solid #fd6b00;
+    border-radius: 50%;
+}
+
+.menu-list-item p{
+    font-size: 22px;
+    color: #1b1b1b;
+}
+
+  @media  (max-width: 900px) {
+    .menu{
+        gap: 20px;
+        
+    }
+    .menu-list{
+        gap: 20px;
+    }
+    .menu-list-item img {
+     width: 70px;
+     
+       
+    }
+    .menu-list-item p{
+        font-size: 16px;
+        color: #1b1b1b;
+    }
+
+    .menu h1{
+        font-size: 28px;
+    }
+    .menu .slogan{
+        width: 100%;
+        font-size: 16px;
+        color: #000000;
+    }
+    
+  }
